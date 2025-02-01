@@ -6,20 +6,43 @@ import { RootReducer } from '../../store'
 const Contatos = () => {
   const dispatch = useDispatch()
   const { itens } = useSelector((state: RootReducer) => state.contato)
+  const { termo } = useSelector((state: RootReducer) => state.pesquisa)
+
+  const filtraPesquisado = () => {
+    const contatos = itens
+
+    if (termo) {
+      return contatos.filter((contato) =>
+        contato.nome.toLowerCase().includes(termo.toLowerCase())
+      )
+    } else {
+      return itens
+    }
+  }
+
+  const contatosDisponiveis = filtraPesquisado()
 
   return (
-    <Listagem>
-      {itens.map((contato) => (
-        <li key={contato.nome}>
-          <Contato
-            nome={contato.nome}
-            email={contato.email}
-            numero={contato.numero}
-            id={contato.id}
-          />
-        </li>
-      ))}
-    </Listagem>
+    <>
+      {filtraPesquisado().length === 0 ? (
+        <h3 style={{ margin: '64px', textAlign: 'center' }}>
+          Nenhum resultado encontrado
+        </h3>
+      ) : (
+        <Listagem>
+          {contatosDisponiveis.map((contato) => (
+            <li key={contato.nome}>
+              <Contato
+                nome={contato.nome}
+                email={contato.email}
+                numero={contato.numero}
+                id={contato.id}
+              />
+            </li>
+          ))}
+        </Listagem>
+      )}
+    </>
   )
 }
 

@@ -41,7 +41,11 @@ export const BotaoVoltar = styled(Link)`
   text-decoration: none;
   border-radius: 8px;
   color: #fff;
+  width: 20%;
+  margin: 0 auto;
+  text-align: center;
   font-weight: bold;
+  align-items: center;
 `
 export const Header = styled(HeaderContainer)`
   padding: 18px;

@@ -59,10 +59,10 @@ const Formulario = () => {
           min={0}
         />
         <BotaoSubmit type="submit">Adicionar contato</BotaoSubmit>
+        <BotaoVoltar type="button" to="/">
+          Voltar
+        </BotaoVoltar>
       </Form>
-      <BotaoVoltar type="button" to="/">
-        Voltar
-      </BotaoVoltar>
     </>
   )
 }

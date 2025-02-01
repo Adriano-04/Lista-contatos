@@ -22,9 +22,16 @@ export const Titulo = styled.h1`
   text-align: center;
   margin-bottom: 12px;
 `
+
+export const Pesquisa = styled.input`
+  padding: 4px;
+  font-size: 16px;
+  margin: 0 8px;
+`
+
 export const Textos = styled.p`
   font-size: 16px;
   display: inline-block;
   font-weight: bold;
-  margin-left: 8px;
+  margin-right: auto;
 `

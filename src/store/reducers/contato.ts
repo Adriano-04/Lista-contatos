@@ -6,20 +6,7 @@ type ContatosState = {
 }
 
 const initialState: ContatosState = {
-  itens: [
-    {
-      nome: 'Adriano marques',
-      email: 'email@gmail.com',
-      numero: 99999999,
-      id: 1
-    },
-    {
-      nome: 'Nome teste',
-      email: 'emailtest@gmail.com',
-      numero: 555555555,
-      id: 2
-    }
-  ]
+  itens: []
 }
 const contatoSlice = createSlice({
   name: 'tarefa',
