@@ -1,10 +1,9 @@
-import { useDispatch, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
 import Contato from '../../components/contato'
 import { Listagem } from './style'
 import { RootReducer } from '../../store'
 
 const Contatos = () => {
-  const dispatch = useDispatch()
   const { itens } = useSelector((state: RootReducer) => state.contato)
   const { termo } = useSelector((state: RootReducer) => state.pesquisa)
 

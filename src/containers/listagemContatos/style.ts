@@ -6,6 +6,10 @@ export const Listagem = styled.ul`
   padding: 0;
   margin-left: 64px;
 
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+
   li {
     text-align: center;
   }
