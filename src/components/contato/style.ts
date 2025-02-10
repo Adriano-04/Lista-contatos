@@ -9,6 +9,7 @@ export const CardContato = styled.div`
   width: 100%;
   height: 200px;
   margin-top: 32px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 `
 export const NomeContato = styled.h3`
   font-weight: bold;

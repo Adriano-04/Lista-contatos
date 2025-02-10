@@ -12,9 +12,9 @@ const Home = () => {
     <>
       <Cabecalho />
       {totalContatos === 0 ? (
-        <h2 style={{ margin: '64px', textAlign: 'center' }}>
+        <h3 style={{ margin: '64px', textAlign: 'center' }}>
           Você não possui nenhum contato adicionado.
-        </h2>
+        </h3>
       ) : (
         <Contatos />
       )}

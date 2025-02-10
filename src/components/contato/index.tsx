@@ -1,4 +1,4 @@
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { editar, remover } from '../../store/reducers/contato'
 import * as style from './style'
 import { useState } from 'react'

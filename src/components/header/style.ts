@@ -21,12 +21,17 @@ export const BotaoAdicionar = styled(Link)`
 export const Titulo = styled.h1`
   text-align: center;
   margin-bottom: 12px;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 `
 
 export const Pesquisa = styled.input`
   padding: 4px;
   font-size: 16px;
   margin: 0 8px;
+  border-radius: 8px;
 `
 
 export const Textos = styled.p`
@@ -34,4 +39,10 @@ export const Textos = styled.p`
   display: inline-block;
   font-weight: bold;
   margin-right: auto;
+
+  @media (max-width: 768px) {
+    text-align: center;
+    margin-top: 12px;
+    display: block;
+  }
 `

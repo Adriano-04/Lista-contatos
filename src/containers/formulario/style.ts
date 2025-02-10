@@ -5,6 +5,10 @@ import { HeaderContainer } from '../../components/header/style'
 
 export const Titulo = styled.h1`
   text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 `
 
 export const Form = styled.form`
@@ -19,8 +23,12 @@ export const Form = styled.form`
   }
 
   label {
-    margin: 8px 0;
+    margin-top: 12px;
     font-weight: bold;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 90%;
   }
 `
 export const BotaoSubmit = styled.button`
@@ -34,6 +42,10 @@ export const BotaoSubmit = styled.button`
   border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    padding: 6px;
+  }
 `
 export const BotaoVoltar = styled(Link)`
   background-color: ${variaveis.BotaoRemover};
@@ -46,8 +58,19 @@ export const BotaoVoltar = styled(Link)`
   text-align: center;
   font-weight: bold;
   align-items: center;
+
+  @media (max-width: 768px) {
+    padding: 6px;
+  }
 `
 export const Header = styled(HeaderContainer)`
   padding: 18px;
   margin-bottom: 24px;
+`
+
+export const Input = styled.input`
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
 `

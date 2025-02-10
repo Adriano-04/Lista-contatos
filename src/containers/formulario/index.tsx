@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux'
-import { BotaoSubmit, BotaoVoltar, Form, Header, Titulo } from './style'
+import { BotaoSubmit, BotaoVoltar, Form, Header, Input, Titulo } from './style'
 import { FormEvent, useState } from 'react'
 import { adicionar } from '../../store/reducers/contato'
 import { useNavigate } from 'react-router-dom'
@@ -31,30 +31,30 @@ const Formulario = () => {
       </Header>
       <Form onSubmit={novoContato}>
         <label htmlFor="nome">Nome: </label>
-        <input
+        <Input
           value={nome}
           type="text"
           id="nome"
           required
-          placeholder="Nome"
+          placeholder="Digite o nome"
           onChange={(e) => setNome(e.target.value)}
         />
         <label htmlFor="email">Email: </label>
-        <input
+        <Input
           value={email}
           type="email"
           id="email"
           required
-          placeholder="Email"
+          placeholder="Digite o email"
           onChange={(e) => setEmail(e.target.value)}
         />
-        <label htmlFor="numero">Numero: </label>
-        <input
+        <label htmlFor="numero">Número: </label>
+        <Input
           value={numero}
           type="number"
           id="numero"
           required
-          placeholder="Número"
+          placeholder="Digite o número"
           onChange={(e) => setNumero(Number(e.target.value))}
           min={0}
         />

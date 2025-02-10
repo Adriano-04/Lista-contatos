@@ -8,9 +8,12 @@ export const Listagem = styled.ul`
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
+    margin-left: 18px;
   }
 
   li {
+    margin-right: 12px;
     text-align: center;
+    max-width: 95%;
   }
 `
