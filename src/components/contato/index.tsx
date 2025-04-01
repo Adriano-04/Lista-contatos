@@ -44,7 +44,7 @@ const Contato = ({ nome, email, numero, id }: Props) => {
             type="number"
             readOnly={!editando}
             value={NovoNumero}
-            onChange={(e) => setNovoNumero(Number(e.target.value))}
+            onChange={(e) => setNovoNumero(e.target.value)}
           />
         </style.LabelContato>
         <style.BotaoEditar onClick={editarSalvar}>

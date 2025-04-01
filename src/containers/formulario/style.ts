@@ -17,18 +17,28 @@ export const Form = styled.form`
   max-width: 420px;
   width: 100%;
   margin: 0 auto;
+  background-color: ${variaveis.ContatoBackground};
+  padding: 24px;
+  border-radius: 8px;
+  margin-top: 64px;
 
   input {
     padding: 8px;
   }
 
   label {
-    margin-top: 12px;
     font-weight: bold;
   }
 
   @media (max-width: 768px) {
     max-width: 90%;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
   }
 `
 export const BotaoSubmit = styled.button`
@@ -69,6 +79,7 @@ export const Header = styled(HeaderContainer)`
 `
 
 export const Input = styled.input`
+  width: 100%;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid black;

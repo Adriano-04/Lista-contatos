@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import {
   BotaoAdicionar,
   HeaderContainer,
+  HeaderItems,
   Pesquisa,
   Textos,
   Titulo
@@ -17,15 +18,21 @@ const Cabecalho = () => {
   return (
     <>
       <HeaderContainer>
-        <Titulo>Lista contatos</Titulo>
-        <BotaoAdicionar to="/Novo">Adicionar contato</BotaoAdicionar>
-        <Pesquisa
-          placeholder="Pesquisar (Nomes)"
-          type="text"
-          value={termo}
-          onChange={(e) => dispatch(pesquisaTermo(e.target.value))}
-        />
-        <Textos>Contatos: {total}</Textos>
+        <Titulo>Contatos</Titulo>
+        <HeaderItems>
+          <div>
+            <Pesquisa
+              placeholder="Pesquisar (Nomes)"
+              type="text"
+              value={termo}
+              onChange={(e) => dispatch(pesquisaTermo(e.target.value))}
+            />
+            <BotaoAdicionar to="/Novo">Adicionar contato</BotaoAdicionar>
+          </div>
+          <div>
+            <Textos>Contatos: {total}</Textos>
+          </div>
+        </HeaderItems>
       </HeaderContainer>
     </>
   )

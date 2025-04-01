@@ -30,7 +30,7 @@ export const InfoContato = styled.input`
   border: none;
   outline: none;
   width: 100%;
-  margin-left: 2px;
+  margin-left: 8px;
 `
 export const BotaoRemover = styled.button`
   padding: 8px;
