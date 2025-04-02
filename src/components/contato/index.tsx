@@ -3,6 +3,7 @@ import { editar, remover } from '../../store/reducers/contato'
 import * as style from './style'
 import { useState } from 'react'
 import ClassContato from '../../models/contato'
+import penciIcon from '../../assets/images/pencil-svgrepo-com.svg'
 
 type Props = ClassContato
 
@@ -29,6 +30,7 @@ const Contato = ({ nome, email, numero, id }: Props) => {
   return (
     <>
       <style.CardContato>
+        {editando ? <img src={penciIcon} alt="" /> : null}
         <style.NomeContato>{nome}</style.NomeContato>
         <style.LabelContato>
           Email:

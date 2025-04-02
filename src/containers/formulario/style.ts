@@ -53,6 +53,10 @@ export const BotaoSubmit = styled.button`
   font-size: 16px;
   cursor: pointer;
 
+  &:hover {
+    filter: brightness(90%);
+  }
+
   @media (max-width: 768px) {
     padding: 6px;
   }
@@ -69,6 +73,10 @@ export const BotaoVoltar = styled(Link)`
   font-weight: bold;
   align-items: center;
 
+  &:hover {
+    filter: brightness(80%);
+  }
+
   @media (max-width: 768px) {
     padding: 6px;
   }
@@ -80,6 +88,7 @@ export const Header = styled(HeaderContainer)`
 
 export const Input = styled.input`
   width: 100%;
+  font-size: 14px;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid black;

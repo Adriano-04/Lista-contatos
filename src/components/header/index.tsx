@@ -9,6 +9,7 @@ import {
 } from './style'
 import { RootReducer } from '../../store'
 import { pesquisaTermo } from '../../store/reducers/pesquisa'
+import icon from '../../assets/images/agenda-svgrepo-com.svg'
 
 const Cabecalho = () => {
   const total = useSelector((state: RootReducer) => state.contato.itens.length)
@@ -16,9 +17,12 @@ const Cabecalho = () => {
   const dispatch = useDispatch()
 
   return (
-    <>
+    <div>
       <HeaderContainer>
-        <Titulo>Contatos</Titulo>
+        <Titulo>
+          <img src={icon} alt="" />
+          Contatos
+        </Titulo>
         <HeaderItems>
           <div>
             <Pesquisa
@@ -34,7 +38,7 @@ const Cabecalho = () => {
           </div>
         </HeaderItems>
       </HeaderContainer>
-    </>
+    </div>
   )
 }
 

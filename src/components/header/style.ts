@@ -24,6 +24,10 @@ export const BotaoAdicionar = styled(Link)`
   border-radius: 8px;
   color: #fff;
   text-decoration: none;
+
+  &:hover {
+    filter: brightness(90%);
+  }
 `
 export const Titulo = styled.h1`
   text-align: center;
@@ -31,6 +35,11 @@ export const Titulo = styled.h1`
 
   @media (max-width: 768px) {
     font-size: 20px;
+  }
+
+  img {
+    width: 24px;
+    margin-right: 12px;
   }
 `
 
@@ -44,7 +53,7 @@ export const Pesquisa = styled.input`
 `
 
 export const Textos = styled.p`
-  font-size: 16px;
+  font-size: 18px;
   display: inline-block;
   font-weight: bold;
   margin-right: auto;
