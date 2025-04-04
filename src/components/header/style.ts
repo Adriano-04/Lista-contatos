@@ -11,6 +11,10 @@ export const HeaderContainer = styled.header`
 export const HeaderItems = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
 `
 
 export const BotaoAdicionar = styled(Link)`
@@ -50,6 +54,11 @@ export const Pesquisa = styled.input`
   background-color: transparent;
   border: none;
   border-bottom: 2px solid black;
+
+  @media (max-width: 768px) {
+    display: block;
+    margin-bottom: 14px;
+  }
 `
 
 export const Textos = styled.p`
