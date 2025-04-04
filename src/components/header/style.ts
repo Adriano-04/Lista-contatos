@@ -68,7 +68,6 @@ export const Textos = styled.p`
   margin-right: auto;
 
   @media (max-width: 768px) {
-    text-align: center;
     margin-top: 12px;
     display: block;
   }
